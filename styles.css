@@ -1,0 +1,103 @@
+:root {
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Raleway", sans-serif;
+}
+
+:root {
+    --iris: #4d5ae5;
+    --ocean: #404bbf;
+    --navy-blue: #2e2f42;
+    --green: #31d0aa;
+    --slate: #434455;
+    --light-slate: #8e8f99;
+    --cornflower: #e7e9fc;
+    --cloud: #f4f4fd;
+    --navy-blue-modal: rgba(46, 47, 66, 0.4);
+    --grey: rgba(46, 47, 66, 0.7);
+    --white: #fff;
+    --dairy: #fcfcfc;
+}
+
+.hero {
+    width: 0 auto;
+    height: 400px;
+    background-image: url("images (1).jpeg");
+    background-size: cover;
+}
+
+/* Планшет */
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image: url("images.jpeg");
+    }
+}
+
+/* ПК */
+@media screen and (min-width: 1158px) {
+    .hero {
+        background-image: url("about-desk@1x.webp");
+    }
+}
+
+
+
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.headerMenu {
+    display: flex;
+
+    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 156px;
+    padding-right: 156px;
+    justify-content: space-between;
+}
+
+.navMenu {
+    display: flex;
+    gap: 76px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.address {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu a {
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.address a {
+    display: flex;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+}
